@@ -1,0 +1,206 @@
+
+
+
+
+TOTAL(10/20)
+
+Correctness: (2/10)
+10 - ceiling(number of tests failed / 2). Min of 0.
+
+Style: (5/7)
+
+-1 line 26 of priorityQueue314, enqueue has no method header comment 
+
+-1 preprocessCompress is over 25 lines long
+
+
+other problems:
+
+Analysis: (3/3)
+
+Comments and Suggestions
+
+====================BUILD ERRORS=====================
+
+=================TEST OUTPUT FOLLOWS=================
+HuffViewer.showError("Compressed file has 8170 more bits than uncompressed file. 
+Select "force compression" option to compress.")
+
+TEST SUMMARY
+
+Test name: CS 314 Assignment 10 (Huffman) scoring test
+
+Results: Passed: 46, Failed: 16, No result: 0
+
+Classes tested:
+* class SimpleHuffProcessor, loaded from file:/u/davidk/Desktop/TA_CS314/newGrade/a10/submissions/yamdagnianika_4560229_69461738_a10/
+
+Environment:       Java version 11.0.17, maximum heap size 3994 MB, running on Linux 4.15.0-197-generic (amd64)
+Java class path:   ../../data/:../../../data/bevotest.jar:./
+Working directory: /u/davidk/Desktop/TA_CS314/newGrade/a10/submissions/yamdagnianika_4560229_69461738_a10
+Test start time:   2022-12-04 16:49:37 CST
+Test end time:     2022-12-04 16:49:40 CST
+Test elapsed time: 2.575 s
+
+
+TEST LOG
+ 1 | Passed    | Run time: 10 ms          | preprocessCompress return < 0 for a small file
+ 2 | Failed    | IOException              | compress does not write if output would be larger (when forced=false)
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$3.executeTest(BevoTest_Huffman.java:171)
+	... 2 more
+ 3 | Passed    | Run time: 11 ms          | Store Counts Format - Check return value from preprocessCompress for A5_EvilHangman_UsingDataStructures.html. 
+ 4 | Passed    | Run time: 9 ms           | int value returned by uncompress method for A5_EvilHangman_UsingDataStructures.html.hf
+ 5 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for A5_EvilHangman_UsingDataStructures.html and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+ 6 | Passed    | Run time: 4 ms           | Compress & uncompress Actual File Written compared to expectedA5_EvilHangman_UsingDataStructures.html
+ 7 | Passed    | Run time: 24 ms          | Store Counts Format - Check return value from preprocessCompress for British_East_Indies_Flag.bmp. 
+ 8 | Passed    | Run time: 11 ms          | int value returned by uncompress method for British_East_Indies_Flag.bmp.hf
+ 9 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for British_East_Indies_Flag.bmp and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+10 | Passed    | Run time: 13 ms          | Compress & uncompress Actual File Written compared to expectedBritish_East_Indies_Flag.bmp
+11 | Passed    | Run time: 172 ms         | Store Counts Format - Check return value from preprocessCompress for ChurchillWordRanks.xlsx. 
+12 | Passed    | Run time: 112 ms         | int value returned by uncompress method for ChurchillWordRanks.xlsx.hf
+13 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for ChurchillWordRanks.xlsx and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+14 | Passed    | Run time: 107 ms         | Compress & uncompress Actual File Written compared to expectedChurchillWordRanks.xlsx
+15 | Passed    | Run time: 41 ms          | Store Counts Format - Check return value from preprocessCompress for MikeScott2.bmp. 
+16 | Passed    | Run time: 28 ms          | int value returned by uncompress method for MikeScott2.bmp.hf
+17 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for MikeScott2.bmp and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+18 | Passed    | Run time: 26 ms          | Compress & uncompress Actual File Written compared to expectedMikeScott2.bmp
+19 | Passed    | Run time: 1 ms           | Store Counts Format - Check return value from preprocessCompress for a_small.txt. 
+20 | Passed    | Run time: 2 ms           | int value returned by uncompress method for a_small.txt.hf
+21 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for a_small.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+22 | Passed    | Run time: 2 ms           | Compress & uncompress Actual File Written compared to expecteda_small.txt
+23 | Passed    | Run time: 1 ms           | Store Counts Format - Check return value from preprocessCompress for all_es.txt. 
+24 | Passed    | Run time: 3 ms           | int value returned by uncompress method for all_es.txt.hf
+25 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for all_es.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+26 | Passed    | Run time: 3 ms           | Compress & uncompress Actual File Written compared to expectedall_es.txt
+27 | Passed    | Run time: 36 ms          | Store Counts Format - Check return value from preprocessCompress for comtadorYellow.jpg. 
+28 | Passed    | Run time: 11 ms          | int value returned by uncompress method for comtadorYellow.jpg.hf
+29 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for comtadorYellow.jpg and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+30 | Passed    | Run time: 12 ms          | Compress & uncompress Actual File Written compared to expectedcomtadorYellow.jpg
+31 | Passed    | Run time: 0 ms           | Store Counts Format - Check return value from preprocessCompress for gophers.txt. 
+32 | Passed    | Run time: 1 ms           | int value returned by uncompress method for gophers.txt.hf
+33 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for gophers.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+34 | Passed    | Run time: 1 ms           | Compress & uncompress Actual File Written compared to expectedgophers.txt
+35 | Passed    | Run time: 49 ms          | Store Counts Format - Check return value from preprocessCompress for scrabbleWordList.txt. 
+36 | Passed    | Run time: 43 ms          | int value returned by uncompress method for scrabbleWordList.txt.hf
+37 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for scrabbleWordList.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+38 | Passed    | Run time: 38 ms          | Compress & uncompress Actual File Written compared to expectedscrabbleWordList.txt
+39 | Passed    | Run time: 13 ms          | Store Counts Format - Check return value from preprocessCompress for wizardOfOz.txt. 
+40 | Passed    | Run time: 12 ms          | int value returned by uncompress method for wizardOfOz.txt.hf
+41 | Failed    | IOException              | Store Counts Format - Compare actual compressed file for wizardOfOz.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+42 | Passed    | Run time: 12 ms          | Compress & uncompress Actual File Written compared to expectedwizardOfOz.txt
+43 | Passed    | Run time: 128 ms         | Store Tree Format - Check return value from preprocessCompress for TreeTestFile.bmp. 
+44 | Passed    | Run time: 108 ms         | int value returned by uncompress method for TreeTestFile.bmp.hf
+45 | Failed    | IOException              | Store Tree Format - Compare actual compressed file for TreeTestFile.bmp and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+46 | Passed    | Run time: 132 ms         | Compress & uncompress Actual File Written compared to expectedTreeTestFile.bmp
+47 | Passed    | Run time: 63 ms          | Store Tree Format - Check return value from preprocessCompress for us_flag.bmp. 
+48 | Passed    | Run time: 33 ms          | int value returned by uncompress method for us_flag.bmp.hf
+49 | Failed    | IOException              | Store Tree Format - Compare actual compressed file for us_flag.bmp and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+50 | Passed    | Run time: 30 ms          | Compress & uncompress Actual File Written compared to expectedus_flag.bmp
+51 | Passed    | Run time: 34 ms          | Store Tree Format - Check return value from preprocessCompress for sub.bmp. 
+52 | Passed    | Run time: 27 ms          | int value returned by uncompress method for sub.bmp.hf
+53 | Failed    | IOException              | Store Tree Format - Compare actual compressed file for sub.bmp and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+54 | Passed    | Run time: 26 ms          | Compress & uncompress Actual File Written compared to expectedsub.bmp
+55 | Passed    | Run time: 18 ms          | Store Tree Format - Check return value from preprocessCompress for hounds_unix.txt. 
+56 | Passed    | Run time: 18 ms          | int value returned by uncompress method for hounds_unix.txt.hf
+57 | Failed    | IOException              | Store Tree Format - Compare actual compressed file for hounds_unix.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+58 | Passed    | Run time: 19 ms          | Compress & uncompress Actual File Written compared to expectedhounds_unix.txt
+59 | Passed    | Run time: 29 ms          | Store Tree Format - Check return value from preprocessCompress for all_vals.txt. 
+60 | Passed    | Run time: 23 ms          | int value returned by uncompress method for all_vals.txt.hf
+61 | Failed    | IOException              | Store Tree Format - Compare actual compressed file for all_vals.txt and expected compressed file.
+      java.io.IOException: bitreading trouble java.io.IOException: Stream closed
+	at BitInputStream.readBits(BitInputStream.java:147)
+	at SimpleHuffProcessor.compress(SimpleHuffProcessor.java:167)
+	at BevoTest_Huffman.testActualCompressResult(BevoTest_Huffman.java:290)
+	at BevoTest_Huffman$5.executeTest(BevoTest_Huffman.java:218)
+	... 2 more
+62 | Passed    | Run time: 22 ms          | Compress & uncompress Actual File Written compared to expectedall_vals.txt
+
+END OF TEST LOG
