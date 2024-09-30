@@ -1,4 +1,7 @@
-Assignment 10 - Huffman Coding Analysis
+# Huffman Coder
+The main code of this repository is stored privately as per the University of Texas at Austin guidelines. If you would like to see it, please contact me and I can add you as a read-only collaborator on an archived private repository.
+
+### Assignment 10 - Huffman Coding Analysis
 
 NOTE: A small portion of the results from my experiments are at the bottom of this file.
 
@@ -19,7 +22,8 @@ headerFormat and other variables, unless the file is extremely large, there woul
 compression.
 
 
-******RESULTS******
+### ******RESULTS******
+
 compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structures\Assignment 10\calgary\calgary\bib.hf
 bib from         111261 to       73795 in        0.895
 compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structures\Assignment 10\calgary\calgary\book1.hf
@@ -56,6 +60,7 @@ compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structu
 progp from       49379 to        31248 in        0.449
 compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structures\Assignment 10\calgary\calgary\trans.hf
 trans from       93695 to        66252 in        0.723
+
 --------
 total bytes read: 3251493
 total compressed bytes 1845571
@@ -79,6 +84,7 @@ compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structu
 serrano.tif from         1498414 to      1127645 in      11.106
 compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structures\Assignment 10\waterloo\waterloo\tulips.tif.hf
 tulips.tif from  1179784 to      1135861 in      12.478
+
 --------
 total bytes read: 12466304
 total compressed bytes 10205282
@@ -106,6 +112,7 @@ compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structu
 syllabus.htm from        33273 to        21342 in        0.254
 compressing to: C:\Users\anika\Documents\College- Freshman Year\314 Data Structures\Assignment 10\BooksAndHTML\BooksAndHTML\ThroughTheLookingGlass.txt.hf
 ThroughTheLookingGlass.txt from  188199 to       110293 in       1.302
+
 --------
 total bytes read: 9788581
 total compressed bytes 5828112
